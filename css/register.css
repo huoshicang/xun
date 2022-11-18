@@ -1,0 +1,89 @@
+body {
+    background: linear-gradient(165deg, rgb(77, 48, 70), #ada2b1)!important;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.box {
+    display: flex;
+    height: auto;
+    width: auto;
+    border-radius: 20px
+}
+
+.box .inp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box .inp div {
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+.box .inp div input {
+    height: 19px;
+    width: 280px;
+    background-color: #e9e9e9;
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    padding: 13px 26px;
+    margin: 15px;
+}
+
+.box .inp div select {
+    width: 96px;
+    margin-left: -39px;
+    transform: translateY(1px);
+    height: 46px;
+    background-color: #e9e9e9;
+    outline: none;
+    border: none;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.box .inp .psd {
+    display: flex;
+}
+
+.box .inp .psd input {
+    width: 98px;
+}
+
+.inp .but {
+    color: #fff;
+    background-color: #251c25;
+    position: relative;
+    text-transform: none;
+    letter-spacing: .025em;
+    font-size: .875rem;
+    outline: none;
+    box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+    display: inline-block;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    width: 88px;
+    height: 45px;
+    line-height: 1.5;
+    border-radius: .375rem;
+    margin-top: 15px;
+    transition: all 0.5s ease;
+}
+
+.inp .but:hover {
+    width: 200px;
+    color: #000;
+    background-color: #fff;
+}

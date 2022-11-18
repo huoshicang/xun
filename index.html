@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/index.css">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>登录</title>
+</head>
+
+<body class="body">
+    <div class="header bg-gradient-primary py-7 py-lg-6">
+    </div>
+    <div class="prompt" style="top: -75px;">
+        <h3></h3>
+    </div>
+    <h1 class="time"></h1>
+    <form action="home.html" class="box" method="get">
+        <!-- 账号 -->
+        <input type="text" placeholder="账号" id="user">
+        <!-- 密码 -->
+        <input type="password" placeholder="密码" id="password">
+        <!-- 验证码 -->
+        <input type="text" placeholder="验证码" id="verification" oninput="OnInput (event,this)" onpropertychange="Onpropertychange (event)">
+        <!-- 登录 -->
+        <button type="submit" onclick="login()" class="sub">登入</button>
+        <!-- 注册 -->
+        <a href="./register.html" class="toggle">注册</a>
+    </form>
+
+</body>
+
+<script src="js/index.js">
+</script>
+
+
+</html>

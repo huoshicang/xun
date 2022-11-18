@@ -1,0 +1,92 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+.content {
+    margin-top: 65px;
+    width: 70vw;
+    height: 655px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+    box-shadow: 0px 0px 18px #c1bebe;
+}
+
+.content .region {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    transform: translateY(-30px);
+}
+
+.content .region * {
+    background-color: rgba(255, 255, 255, 0);
+    width: 500px;
+    height: 50px;
+    margin: 10px;
+    outline: none;
+    font-size: 15px;
+    font-family: "微软雅黑";
+    letter-spacing: 3px;
+}
+
+.content .region input {
+    text-align: center;
+    color: #000;
+    font-size: 23px;
+    border: none;
+    border-bottom: 3px solid rgb(0, 0, 0);
+}
+
+.content .region select {
+    height: 40px;
+    text-align: center;
+    color: #000;
+    border: none;
+}
+
+.content .region textarea {
+    height: 100px;
+}
+
+.content .region span {
+    font-size: 20px;
+    margin-block-start: -2.33em;
+    font-weight: bold;
+    height: auto;
+    margin-top: 10px;
+}
+
+.content .number {
+    margin-bottom: 10px;
+}
+
+.content button {
+    height: 50px;
+    cursor: pointer;
+    width: 40%;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    background-color: #ada2b1;
+    transition: all 0.25s ease;
+}
+
+.content button:hover {
+    width: 45%;
+    transform: translateY(-10px);
+    background-color: rgba(0, 0, 0, 0.401);
+    color: #FFF;
+}
+
+.content button:active {
+    scale: 0.8;
+}

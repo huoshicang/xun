@@ -1,0 +1,125 @@
+body {
+    background-color: #e9e9e9;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* 主体 */
+
+.content {
+    margin-top: 65px;
+    width: 60vw;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content .left {
+    height: auto;
+    flex: 2;
+}
+
+.content .right {
+    flex: 7;
+}
+
+.content .left ul {
+    font-weight: bolder;
+}
+
+.content .left ul li {
+    width: 90%;
+    height: 50px;
+    margin: 20px 10px 20px 10px;
+    background-color: #ada2b1;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.content .left ul li:hover {
+    transform: translateX(-10px);
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    color: white;
+    background-color: rgb(77, 48, 70);
+}
+
+
+/*  */
+
+.right {
+    height: auto;
+    width: 95vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.right .contentC {
+    cursor: pointer;
+    width: 170px;
+    height: 170px;
+    margin: 20px;
+    border: none;
+    background-color: rgb(77, 48, 70);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    animation: myfirst 0.5s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes myfirst {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.right .contentC .release_date {
+    width: 100%;
+    height: 25px;
+    background-color: #ada2b1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transition: all 0.5s;
+    transform: translateY(-26px);
+    opacity: 0;
+}
+
+.right .contentC .Check_collect {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    background-color: #ada2b1;
+    transition: all 0.5s;
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+.right .contentC:hover {
+    box-shadow: 0px 0px 17px #000000;
+}
+
+.right .contentC:hover .release_date {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.right .contentC:hover .Check_collect {
+    transform: translateY(0px);
+    opacity: 1;
+}

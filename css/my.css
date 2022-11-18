@@ -1,0 +1,247 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+    font-family: Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+.navigation {
+    animation: myfirst 1s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes myfirst {
+    0% {
+        opacity: 0;
+        transform: translateY(-65px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+/* 内容位置 */
+
+.content {
+    margin-top: 65px;
+    width: 70vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    animation: myfirst2 1s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes myfirst2 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* 个人信息 */
+
+.content .information {
+    height: 170px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    background-color: white;
+    /* border-bottom: 3px solid black; */
+}
+
+
+/* 头像 */
+
+.content .information .avatar {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.content .information .avatar img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.content .information .avatar input {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+
+
+/* 自定义信息 */
+
+.content .information .nick,
+.content .information .sign {
+    margin: 20px;
+}
+
+.content .function {
+    margin-top: 10px;
+    width: 70vw;
+    height: auto;
+    margin-bottom: 15px;
+    display: flex;
+}
+
+
+/* 历史 收藏 */
+
+.content .function .history_collect {
+    flex: 1;
+    background-color: rgb(255, 255, 255);
+    margin-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    height: 190px;
+}
+
+.content .function .history_collect a {
+    width: 100%;
+    height: 100%;
+}
+
+.content .function .history_collect div {
+    cursor: pointer;
+    margin-top: 30px;
+    width: 70%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #796379;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+    font-weight: bold;
+}
+
+.content .function .history_collect div:hover {
+    background-color: #403140;
+    border-radius: 0px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+}
+
+
+/* 功能 */
+
+.content .function .show {
+    flex: 4;
+    background-color: rgb(255, 255, 255);
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content .function .show .options {
+    /* background-color: darkgray; */
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.content .function .show .options button {
+    height: 50px;
+    width: 225px;
+    border: none;
+    font-size: 1.17em;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0);
+    transition: all 0.5s ease;
+    border: none;
+}
+
+.content .function .show .options button:hover {
+    border: 3px solid #978697;
+    border-radius: 15px;
+}
+
+.content .function .show .options button:nth-child(1):hover {
+    position: relative;
+    width: 400%;
+}
+
+.content .function .show .options button:nth-child(2):hover {
+    position: relative;
+    width: 400%;
+}
+
+.content .function .show .options button:nth-child(3):hover {
+    position: relative;
+    width: 400%;
+}
+
+
+/* 发布区域 */
+
+.content .function .show h2 {
+    display: flex;
+    height: auto;
+    width: 88%;
+}
+
+.content .function .show .release {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.content .function .show .release .releasE {
+    transition: all 0.5s;
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border: none;
+    background-color: rgb(142, 142, 238);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.content .function .show .release .releasE:hover {
+    transform: translateY(-25px);
+}
+
+.content .function .show .release .releasE:hover .buttom {
+    opacity: 1;
+}
+
+.content .function .show .release .releasE .buttom {
+    display: flex;
+    transform: translateY(25px);
+    justify-content: space-around;
+    width: 100%;
+    background-color: #0000004f;
+    height: 25px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    opacity: 0;
+    transition: all 0.5s;
+}
